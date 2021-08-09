@@ -1,0 +1,88 @@
+@import '../../../styles.scss';
+
+.homepage-screen {
+  .left-side-content {
+    .info {
+      p {
+        color: black;
+        font-size: 15px;
+      }
+    }
+    .featured {
+      padding-top: 40px;
+      h6 {
+        color: black;
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .f-quiz {
+        margin-top: 33px;
+        a {
+          img {
+            width: 100%;
+            height: 175px;
+            object-fit: fill;
+            object-position: center;
+          }
+        }
+        p {
+          background-color: #343a40;
+          color: white;
+          padding: 8px;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .add {
+      padding: 50px 0;
+      text-align: center;
+      a {
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    .new {
+      padding-bottom: 55px;
+      h6 {
+        color: black;
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .n-quiz {
+        margin-top: 33px;
+        a {
+          img {
+            width: 100%;
+            height: 175px;
+            object-fit: fill;
+            object-position: center;
+          }
+        }
+        p {
+          background-color: #343a40;
+          color: white;
+          padding: 8px;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .right-side-content {
+    .addvertising {
+      a {
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
