@@ -1,0 +1,94 @@
+@import '../../../../styles.scss';
+
+.quiz-deatil-screen {
+  .add {
+    padding: 25px 0;
+    a {
+      img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .quiz-questions {
+    img {
+      width: 100%;
+      height: 370px;
+      object-fit: fill;
+      object-position: center;
+    }
+    p {
+      background-color: #343a40;
+      color: white;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .btns {
+      padding-bottom: 20px;
+    }
+  }
+  .quiz-info {
+    padding: 12px 0 25px 0;
+    h6 {
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      padding-top: 10px;
+      color: black;
+      font-size: 16px;
+    }
+  }
+  .adds {
+    padding-bottom: 10px;
+    a {
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .new-quizes {
+    padding: 45px 0;
+    h6 {
+      color: black;
+      font-size: 26px;
+      font-weight: 500;
+    }
+    .n-quiz {
+      a {
+        img {
+          width: 100%;
+          height: 175px;
+          object-fit: fill;
+          object-position: center;
+        }
+        color: black;
+        font-size: 15px;
+        p {
+          color: black;
+          padding: 10px 0;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .addvertising {
+    a {
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

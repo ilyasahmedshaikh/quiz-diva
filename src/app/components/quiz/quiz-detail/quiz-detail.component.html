@@ -1,1 +1,83 @@
-<p>quiz-detail works!</p>
+<div class="quiz-deatil-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-9 col-lg-9">
+        <div class="progress" style="height: 20px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="add">
+          <div class="row">
+            <div class="col-12">
+              <a href="#"><img src="../../../../assets/img/gh.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-questions">
+          <img src="../../../../assets/img/qd1.png">
+          <p>Which price is right?</p>
+
+          <div class="btns">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mt-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block">$3.79 LB</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">$8.00 LB</button>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 mt-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block">$11.52 LB</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">$13.20 LB</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-info">
+          <h6>Did you know?</h6>
+          <p>According to the Guinness Book of World Records, the largest gummy bear weighs 1,128 pounds. The record was set by Elisabeth Windisch from Germany and she told Guinness Book of World Records that the gummy bear took 6 days to set in the refrigerator.</p>
+        </div>
+        <div class="adds">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mt-4">
+              <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="new-quizes">
+          <div class="row">
+            <div class="col-12">
+              <h6>New Quizzes</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let item of newList">
+              <div class="n-quiz">
+                <a href="#"> <img src="{{item.image}}">
+                  <p>{{item.name}}</p>
+                </a>
+                <a href="#">Culture</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="addvertising">
+          <a href="#"><img src="../../../../assets/img/add.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
