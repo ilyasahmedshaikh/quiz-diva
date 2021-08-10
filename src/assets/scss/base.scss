@@ -14,10 +14,6 @@ a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px 0 0 0;
-}
-
 .input-box {
     border: 1px solid #e7e7e7;
     padding: 10px;
@@ -59,60 +55,4 @@ input[type="color"]:focus,
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-.main-header-space {
-    position: relative;
-    top: 55px;
-}
-
-.loading {
-    width: 200px;
-    display: block;
-    margin: auto;
-}
-
-.no-data {
-    width: 150px;
-    display: block;
-    margin: auto;
-}
-
-.content-loading {
-    width: 300px;
-    display: block;
-    margin: auto;
-}
-
-.disable-opacity {
-    opacity: 0.5;
-}
-
-.back-btn {
-  position: fixed;
-  top: 20px;
-  left: 15px;
-  background: #cccccc29;
-  padding: 5px 20px;
-  color: black;
-  border-radius: 25px;
-}
-
-.add-circular-fixed{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  width: 50px;
-  height: 50px;
-  background: $default;
-  border-radius: 50%;
-  box-shadow: 1px 1px 10px #eeeeee;
-  a {
-    font-size: 25px;
-    color: white;
-    i {
-      padding: 10px;
-    }
-  }
 }
