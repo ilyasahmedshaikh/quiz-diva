@@ -1,6 +1,7 @@
 @import '../../../styles.scss';
 
 .homepage-screen {
+  padding: 40px 0 55px 0;
   .left-side-content {
     .info {
       p {
@@ -49,7 +50,6 @@
       }
     }
     .new {
-      padding-bottom: 55px;
       h6 {
         color: black;
         font-size: 26px;

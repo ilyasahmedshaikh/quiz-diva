@@ -1,6 +1,7 @@
 @import '../../../../styles.scss';
 
 .quiz-deatil-screen {
+  padding: 40px 0 55px 0;
   .add {
     padding: 25px 0;
     a {
@@ -58,7 +59,6 @@
     }
   }
   .new-quizes {
-    padding: 45px 0;
     h6 {
       color: black;
       font-size: 26px;
