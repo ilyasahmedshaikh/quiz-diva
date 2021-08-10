@@ -4,6 +4,7 @@
   .add {
     padding: 25px 0;
     a {
+      cursor: pointer;
       img {
         width: 100%;
         height: 130px;
@@ -16,7 +17,7 @@
     img {
       width: 100%;
       height: 370px;
-      object-fit: fill;
+      object-fit: cover;
       object-position: center;
     }
     p {
@@ -47,6 +48,7 @@
   .adds {
     padding-bottom: 10px;
     a {
+      cursor: pointer;
       img {
         width: 100%;
         height: 200px;
@@ -64,10 +66,11 @@
     }
     .n-quiz {
       a {
+      cursor: pointer;
         img {
           width: 100%;
           height: 175px;
-          object-fit: fill;
+          object-fit: cover;
           object-position: center;
         }
         color: black;
@@ -83,6 +86,7 @@
   }
   .addvertising {
     a {
+      cursor: pointer;
       img {
         width: 100%;
         height: 200px;

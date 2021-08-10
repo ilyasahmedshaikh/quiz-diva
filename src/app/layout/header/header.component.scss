@@ -3,6 +3,7 @@
 header {
   nav {
     a {
+      cursor: pointer;
       font-weight: 500;
       &.navbar-fb {
         i {
@@ -13,6 +14,7 @@ header {
     }
     .collapse {
       a {
+        cursor: pointer;
         &.nav-link {
           color: white;
         }
