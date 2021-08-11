@@ -1,81 +1,42 @@
-<div class="quiz-deatil-screen">
+<div class="quiz-detail-screen">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-9 col-lg-9">
-        <div class="progress" style="height: 20px;">
-          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="add">
-          <div class="row">
-            <div class="col-12">
-              <a><img src="assets/img/gh.jpg"></a>
-            </div>
-          </div>
-        </div>
+      <div class="col-12">
         <div class="quiz-questions">
           <img src="assets/img/qd1.png">
           <p>Which price is right?</p>
+        </div>
 
-          <div class="btns">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-6 mt-4">
-                <button type="button" class="btn btn-primary btn-lg btn-block"><strong>$ 35</strong></button>
-                <button type="button" class="btn btn-primary btn-lg btn-block"><strong>$ 80</strong></button>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 mt-4">
-                <button type="button" class="btn btn-primary btn-lg btn-block"><strong>$ 110</strong></button>
-                <button type="button" class="btn btn-primary btn-lg btn-block"><strong>$ 155</strong></button>
-              </div>
+        <div class="ad-section-between">
+          <div class="row justify-content-center">
+            <div class="col-6 text-center">
+              <a><img src="../../../../assets/img/pepsi-add.jpg" alt="ad"></a>
             </div>
           </div>
         </div>
+
         <div class="quiz-info">
-          <h6>Did you know?</h6>
-          <p>According to the Guinness Book of World Records, the largest gummy bear weighs 1,128 pounds. The record was set by Elisabeth Windisch from Germany and she told Guinness Book of World Records that the gummy bear took 6 days to set in the refrigerator.</p>
-        </div>
-        <div class="adds">
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 mt-4">
-              <a><img src="assets/img/add.jpg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="new-quizes">
-          <div class="row">
-            <div class="col-12">
-              <h6>New Quizzes</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let item of newList">
-              <div class="n-quiz">
-                <a> <img src="{{item.image}}">
-                  <p>{{item.name}}</p>
-                </a>
-                <a>Culture</a>
-              </div>
-            </div>
-          </div>
+          <h6>Can You See The Objects Hidden In The Ishihara Tests?</h6>
+          <p>Did you know that it's much more likely for men to be colorblind than women? 1 in 200 women are born colorblind while 1 out of every 12 men are. The Ishihara color blind test was invented by Dr. Shinobu Ishihara in 1916. The test was originally used to help identify color blind soldiers in the military but became more widespread in 1917. </p>
+          <p>We have used the Ishihara test template and added our own images within the dots to test your color acuity. Within this quiz are questions that test if your eyes are affected by protanopia, deuteranopia, and tritanopia. If you issues answering most of these questions, it's quite possible you could be colorblind.</p>
         </div>
       </div>
-      <div class="col-12 col-md-3 col-lg-3">
-        <div class="addvertising">
-          <a><img src="assets/img/add.jpg"></a>
+
+      <div class="col-12 pb-3">
+        <button class="btn btn-primary btn-lg btn-block" routerLink="/quiz/start-quiz">Start Quiz</button>
+      </div>
+    </div>
+
+    <div class="adds">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let ad of ads">
+          <a>
+            <img src="{{ad.image}}">
+            <h5>{{ad.name}}</h5>
+            <p class="text-black-50">
+              <small>{{ad.kind}}  |  {{ad.sponsored ? 'Sponsored' : 'Normal'}}</small>
+            </p>
+          </a>
         </div>
       </div>
     </div>

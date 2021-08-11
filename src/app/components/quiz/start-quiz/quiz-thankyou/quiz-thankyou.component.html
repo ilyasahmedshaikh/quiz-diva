@@ -1,1 +1,58 @@
-<p>quiz-thankyou works!</p>
+<div class="quiz-thankyou-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-9 col-lg-9">
+        <div class="lg-add">
+          <a><img src="assets/img/gh.jpg"></a>
+        </div>
+        <div class="score">
+          <h4>Your Scored 70%!</h4>
+        </div>
+
+        <div class="quiz-questions">
+          <img src="assets/img/qd1.png">
+          <p>Which price is right?</p>
+        </div>
+
+        <div class="col-12 px-0 py-3">
+          <button class="btn btn-success btn-lg btn-block" routerLink="/quiz/start-quiz">Try Another Quiz</button>
+        </div>
+
+        <div class="adds">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let ad of ads">
+              <a>
+                <img src="{{ad.image}}">
+                <h5>{{ad.name}}</h5>
+                <p class="text-black-50">
+                  <small>{{ad.kind}}  |  {{ad.sponsored ? 'Sponsored' : 'Normal'}}</small>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 px-0 pt-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block" routerLink="/quiz/start-quiz">Try Again</button>
+          </div>
+          <div class="col-12 px-0 pt-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block" routerLink="/quiz/start-quiz"><i class="fab fa-facebook-f pr-2"></i> Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 col-lg-3" *ngFor="let ad of sideAds">
+        <div class="addvertising">
+          <a>
+            <img src="{{ad.image}}">
+            <h5>{{ad.name}}</h5>
+            <p class="text-black-50">
+              <small>{{ad.kind}}  |  {{ad.sponsored ? 'Sponsored' : 'Normal'}}</small>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
