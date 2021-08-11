@@ -1,10 +1,11 @@
-<div class="start-quiz-screen">
+<div class="start-quiz-screen" *ngIf="!quizAccomplished">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-9 col-lg-9">
         <div class="progress" style="height: 20px;">
-          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar" role="progressbar" [ngStyle]="{'width': accomplishmentPercentage + '%'}" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+
         <div class="add">
           <div class="row">
             <div class="col-12">
@@ -12,27 +13,18 @@
             </div>
           </div>
         </div>
-        <div class="quiz-questions">
-          <img src="assets/img/qd1.png">
-          <p>Which price is right?</p>
 
-          <div class="btns">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-6">
-                <button type="button" class="btn btn-primary btn-lg btn-block mt-2">35</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block mt-2">110</button>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6">
-                <button type="button" class="btn btn-primary btn-lg btn-block mt-2">84</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block mt-2">74</button>
-              </div>
-            </div>
+        <div class="questions-area">
+          <div class="question">
+            <app-quiz-question [data]="question" (answerEvent)="onAnswerEvent($event)"></app-quiz-question>
           </div>
         </div>
+
         <div class="quiz-info">
           <h6>Did you know?</h6>
           <p>According to the Guinness Book of World Records, the largest gummy bear weighs 1,128 pounds. The record was set by Elisabeth Windisch from Germany and she told Guinness Book of World Records that the gummy bear took 6 days to set in the refrigerator.</p>
         </div>
+
         <div class="adds">
           <div class="row">
             <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let ad of ads">
@@ -46,6 +38,7 @@
             </div>
           </div>
         </div>
+
         <div class="new-quizes">
           <div class="row">
             <div class="col-12">
@@ -64,6 +57,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-12 col-md-3 col-lg-3" *ngFor="let ad of sideAds">
         <div class="addvertising">
           <a>
@@ -79,4 +73,6 @@
   </div>
 </div>
 
-<app-quiz-thankyou></app-quiz-thankyou>
+<div class="thankyou" *ngIf="quizAccomplished">
+  <app-quiz-thankyou></app-quiz-thankyou>
+</div>

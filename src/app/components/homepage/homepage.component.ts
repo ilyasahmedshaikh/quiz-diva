@@ -49,7 +49,7 @@ export class HomepageComponent implements OnInit {
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
       sponsored: true
-    },
+    }
   ]
 
   newList: any = [
@@ -92,7 +92,12 @@ export class HomepageComponent implements OnInit {
       id: 1,
       image: "assets/img/nq9.png",
       name: "FRESH FRUIT QUIz"
-    }
+    },
+    {
+      id: 1,
+      image: "assets/img/nq3.jpg",
+      name: "ULTIMATE HALLOWEEN QUIZ"
+    },
   ];
 
   constructor() { }

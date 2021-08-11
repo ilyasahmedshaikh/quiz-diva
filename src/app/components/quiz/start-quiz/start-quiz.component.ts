@@ -7,6 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartQuizComponent implements OnInit {
 
+  questions: any = [
+    {
+      id: 1,
+      questionImage: 'assets/img/qd1.png',
+      questionText: 'Which price is right?',
+      answers: [35, 110, 84, 74]
+    },
+    {
+      id: 2,
+      questionImage: 'assets/img/qd1.png',
+      questionText: 'Which number is right?',
+      answers: [45, 110, 12, 74]
+    },
+    {
+      id: 3,
+      questionImage: 'assets/img/qd1.png',
+      questionText: 'Which width number is right?',
+      answers: [23, 56, 89, 74]
+    },
+    {
+      id: 4,
+      questionImage: 'assets/img/qd1.png',
+      questionText: 'Which price is right?',
+      answers: [35, 110, 84, 74]
+    }
+  ]
+
   ads: any = [
     {
       id: 1,
@@ -90,10 +117,35 @@ export class StartQuizComponent implements OnInit {
     }
   ];
 
+  question: any = this.questions[0];
+  questionIndex: number = 0;
+  quizAccomplished: boolean = false;
+  accomplishmentPercentage: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
 
+  onAnswerEvent(event) {
+    this.questionIndex = this.questionIndex+1;
+    this.calculateProgress();
+
+    if (event == true) {
+      if (this.questionIndex < this.questions.length) {
+        this.question = this.questions[this.questionIndex];
+      } else {
+        this.quizAccomplished = true;
+        console.log('Quiz Accomplished');
+      }
+    }
+    else {
+      // do nothing
+    }
+  }
+
+  calculateProgress() {
+    this.accomplishmentPercentage = (this.questionIndex/this.questions.length)*100;
   }
 
 }

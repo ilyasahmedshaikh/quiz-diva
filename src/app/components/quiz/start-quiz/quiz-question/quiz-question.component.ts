@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-quiz-question',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizQuestionComponent implements OnInit {
 
+  @Input('data') data: any = {};
+  @Output() answerEvent = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onAnswer() {
+    this.answerEvent.emit(true);
   }
 
 }

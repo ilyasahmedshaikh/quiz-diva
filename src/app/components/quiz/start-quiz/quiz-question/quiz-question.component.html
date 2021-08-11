@@ -1,1 +1,12 @@
-<p>quiz-question works!</p>
+<div class="quiz-questions">
+  <img src="{{data.questionImage}}">
+  <p>{{data.questionText}}</p>
+
+  <div class="btns">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6" *ngFor="let answer of data.answers">
+        <button class="btn btn-primary btn-lg btn-block mt-2" (click)="onAnswer()">{{answer}}</button>
+      </div>
+    </div>
+  </div>
+</div>
