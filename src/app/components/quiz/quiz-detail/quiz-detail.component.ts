@@ -16,35 +16,35 @@ export class QuizDetailComponent implements OnInit {
       sponsored: true
     },
     {
-      id: 1,
+      id: 2,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
       sponsored: false
     },
     {
-      id: 1,
+      id: 3,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
       sponsored: true
     },
     {
-      id: 1,
+      id: 4,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
       sponsored: false
     },
     {
-      id: 1,
+      id: 5,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
       sponsored: true
     },
     {
-      id: 1,
+      id: 6,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',

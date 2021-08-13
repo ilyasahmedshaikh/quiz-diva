@@ -16,7 +16,7 @@ export class QuizThankyouComponent implements OnInit {
       sponsored: true
     },
     {
-      id: 1,
+      id: 2,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',

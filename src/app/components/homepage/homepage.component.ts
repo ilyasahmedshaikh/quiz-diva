@@ -14,12 +14,12 @@ export class HomepageComponent implements OnInit {
       name: "ROCKY'S GOLDEN APPLE ADVENTURE"
     },
     {
-      id: 1,
+      id: 2,
       image: "assets/img/fq2.png",
       name: "THE COLORBLIND IMAGE QUIZ"
     },
     {
-      id: 1,
+      id: 3,
       image: "assets/img/fq3.png",
       name: "WHICH PRICE IS RIGHT?"
     }
@@ -34,7 +34,7 @@ export class HomepageComponent implements OnInit {
       sponsored: true
     },
     {
-      id: 1,
+      id: 2,
       image: 'assets/img/add.jpg',
       name: 'Find the best way for scanning your old photos',
       kind: 'Photomyne',
@@ -59,42 +59,42 @@ export class HomepageComponent implements OnInit {
       name: "ULTIMATE CHRISTMAS QUIZ"
     },
     {
-      id: 1,
+      id: 2,
       image: "assets/img/nq2.jpg",
       name: "SPOT SANTA QUIZ"
     },
     {
-      id: 1,
+      id: 3,
       image: "assets/img/nq3.jpg",
       name: "ULTIMATE HALLOWEEN QUIZ"
     },
     {
-      id: 1,
+      id: 4,
       image: "assets/img/nq4.jpg",
       name: "AMONG US TASK QUIZ"
     },
     {
-      id: 1,
+      id: 5,
       image: "assets/img/nq5.jpg",
       name: "FALL GUYS MISSING PIECE QUIZ"
     },
     {
-      id: 1,
+      id: 6,
       image: "assets/img/nq6.jpg",
       name: "SPOT THE CHAMELEON"
     },
     {
-      id: 1,
+      id: 7,
       image: "assets/img/nq7.jpg",
       name: "THE ULTIMATE SIMPSONS QUIZ"
     },
     {
-      id: 1,
+      id: 8,
       image: "assets/img/nq9.png",
       name: "FRESH FRUIT QUIz"
     },
     {
-      id: 1,
+      id: 9,
       image: "assets/img/nq3.jpg",
       name: "ULTIMATE HALLOWEEN QUIZ"
     },
